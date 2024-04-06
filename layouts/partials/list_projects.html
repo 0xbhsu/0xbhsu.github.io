@@ -1,0 +1,25 @@
+<h2> {{ .Title | markdownify }}</h2>
+
+{{ .Content }}
+
+<ul id="main-list">
+    {{ $pages := .Pages }}
+    {{ range (where $pages "Section" "!=" "") }}
+    <dt class="main-list-item-header">
+        &gt; <span class="main-list-title">
+        <a target="_blank" href="{{ .Params.repo }}">
+            {{ .Title }}</a>
+        </span>
+
+        {{ if (in .Params.repo "gitlab" ) }}
+        <img class="img-16" src='{{ "/images/gitlab.png" | relURL }}'>
+        {{ else if (in .Params.repo "github")}}
+        <img class="img-16" src='{{ "/images/github.png" | relURL }}'>
+        {{ end }}
+
+    </dt>
+    <dd class="main-list-item-description">
+        {{ .Content }}
+    </dd>
+    {{ end }}
+</ul>

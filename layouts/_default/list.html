@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+    
+<div class="content-wrapper">
+    {{ if .IsHome }}
+    {{ partial "list_home.html" . }}
+
+    {{ else if eq .Title "Projects" }}
+    {{ partial "list_projects.html" . }}
+
+    {{ else if eq .Title "Posts" }}
+    {{ partial "list_posts.html" . }}
+    
+    {{ else }}
+    {{ partial "list_default.html" . }}
+
+    {{ end }}
+</div>
+
+{{ partial "footer.html" . }}

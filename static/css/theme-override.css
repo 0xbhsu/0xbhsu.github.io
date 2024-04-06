@@ -1,0 +1,95 @@
+body {
+    margin: 0 auto;
+}
+
+a {
+    color: red;
+}
+
+.article-content h2 {
+    margin-top: 2em;
+}
+
+header {
+    background: #262626;
+}
+
+header a {
+    color: white;
+}
+
+header a:hover {
+    color: red;
+}
+
+header .current a {
+    color: red;
+}
+
+#main-list {
+    padding-left: 2em;
+}
+
+.article-meta {
+    background-color: #383838;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    font-size: 1.1em;
+    font-size: .7em;
+    padding: 1.2em;
+}
+
+.article-meta h1 {
+    margin: 0;
+}
+
+span#article-title {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: white;
+}
+p#article-subtitle {
+    font-size: 1.3em;
+    color: white;
+    margin: 0;
+}
+
+span#article-author, span#article-date {
+    color: red;
+}
+
+.terms {
+    color: white;
+    margin: 0;
+}
+
+#TableOfContents {
+    border-radius: 0;
+}
+
+.article-content {
+    padding: 0;
+}
+
+main {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* Code Boxes */
+pre {
+    background: #f8f8f8;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #eee;
+    padding: 1.2em;
+    overflow-x: auto;
+    line-height: 1.3em;
+}
+
+pre code { 
+    background: none;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: .7em;
+}
