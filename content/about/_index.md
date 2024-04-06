@@ -9,5 +9,5 @@ This blog is inspired in the [zer1t0's blog](https://zer1t0.gitlab.io), which co
 ## Contact
 You can reach me here:
 - [twitter](https://twitter.com/0xbhsu)
-- [email](mailto:contact.0xbhsu@krutt.org) - (use my [pgp key](/contact/key))
+- [email](mailto:contact.0xbhsu@krutt.org) - (use my [pgp key](/about/key))
 - [hackthebox](https://app.hackthebox.com/users/964437)
